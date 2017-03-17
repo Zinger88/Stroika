@@ -1,0 +1,333 @@
+@font-face {
+    font-family: "RobotoRegular";
+    src: url("../fonts/RobotoRegular/RobotoRegular.eot");
+    src: url("../fonts/RobotoRegular/RobotoRegular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/RobotoRegular/RobotoRegular.woff") format("woff"),
+    url("../fonts/RobotoRegular/RobotoRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "RobotoLight"; */
+@font-face {
+    font-family: "RobotoLight";
+    src: url("../fonts/RobotoLight/RobotoLight.eot");
+    src: url("../fonts/RobotoLight/RobotoLight.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/RobotoLight/RobotoLight.woff") format("woff"),
+    url("../fonts/RobotoLight/RobotoLight.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "RobotoMedium"; */
+@font-face {
+    font-family: "RobotoMedium";
+    src: url("../fonts/RobotoMedium/RobotoMedium.eot");
+    src: url("../fonts/RobotoMedium/RobotoMedium.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/RobotoMedium/RobotoMedium.woff") format("woff"),
+    url("../fonts/RobotoMedium/RobotoMedium.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "RobotoBold"; */
+@font-face {
+    font-family: "RobotoBold";
+    src: url("../fonts/RobotoBold/RobotoBold.eot");
+    src: url("../fonts/RobotoBold/RobotoBold.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/RobotoBold/RobotoBold.woff") format("woff"),
+    url("../fonts/RobotoBold/RobotoBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+$main-color: #1b1b1b;
+$second-color: #ffff9c;
+
+body{
+	width: 100%;
+	font-family: "RobotoLight";
+}
+
+
+a{
+	text-decoration: none;
+	&:hover{
+		text-decoration: none;
+	}
+}
+
+.container{
+	max-width: 1000px;
+}
+
+.btn{
+	background: rgba(255,255,255,.5);
+	padding: 15px 25px;
+	margin: 20px auto;
+	border-radius:0;
+	color: $main-color;
+	text-transform: uppercase;
+	transition: .5s;
+
+	&:hover{
+		color:$main-color;
+		background:white;
+	}
+}
+
+.hidden{
+	display: none;
+}
+
+#form{
+	margin: 10% auto;
+	min-width: 320px;
+	max-width: 500px;
+	color: $main-color;
+	text-align: center;
+	background: white;
+	border:5px solid #e65540;
+	position: relative;
+	h3{
+		font-size: 18px;
+	}
+	p{
+		font-size: 18px;
+		font-weight: bold;
+	}
+	input{
+		padding: 10px;
+		text-align: center;
+		margin: 10px auto;
+		width: 90%;
+		color: black;
+	}
+	
+	textarea{
+		padding: 10px;
+		text-align: center;
+		margin: 10px 0;
+	}
+}
+
+header{
+	color:white;
+	background: $main-color;
+	height: 70px;
+
+	.container{
+		text-align: left;
+		overflow: hidden;
+		padding: 0;
+		.header-menu{
+			position: fixed;
+		}
+		.left-part{
+			img{
+				width: 30px;
+				height: 30px;
+			}
+			h1{
+				text-transform: uppercase;
+				line-height: 70px;
+				font-size: 15px;
+				font-weight: 200;
+				margin: 0;
+				padding: 0;
+				display: inline-block;
+			}
+		}
+		.right-part{
+			text-align: right;
+			padding-top: 7px;
+			font-size: 15px;
+			background:$main-color;
+			p{
+				margin: 5px 0;
+				padding: 0;
+			}
+			i{
+				font-size: 16px;
+			}
+		}
+		
+	}
+//---------------------------menu
+	.menu-trigger {
+		display: none;
+		background: $main-color;
+		
+	}
+	nav {
+		width: 100%;
+		text-align:center; 
+		text-transform: uppercase;
+		background: $main-color;
+		ul{
+			margin: 0;
+			padding: 0;
+			position: relative;
+			border-color:$second-color;
+			li {
+				display: inline-block;
+				padding: 0 0;
+			}
+		}
+	}
+	
+	
+	nav a {
+	  display: block;
+	  text-decoration: none;
+	  line-height: 70px;
+	  font-size: 12px;
+	  padding: 0 20px;
+	  font-weight: 600;
+	  color: white;
+	  transition: .5s ease;
+	}
+	nav li:hover {
+		text-decoration: none;
+		color:white;
+	}
+	
+	.active {
+		background: #e65540;
+		text-decoration: none;
+		color:white;
+	}
+	
+	nav a:hover {
+		text-decoration: none;
+		color:$second-color;
+	}
+	nav a:focus {
+		text-decoration: none;
+		color:white;
+	}
+	
+	
+	@media screen and (max-width: 768px) {
+	  nav li {
+		display: block;
+		text-align: center;
+	  }
+	  nav a {
+		border-bottom: 1px solid $second-color;
+
+	  }
+	  .menu-trigger {
+		display: block;
+	  }
+	  nav ul {
+		display: none;
+	  }
+	}
+
+
+}
+//-----------------main section----------------
+
+.main-section{
+	margin-top:70px;
+	background-image: url(../img/back2.jpg);
+	background-size: cover;
+
+	.main-part{
+		height:300px;
+		text-align: center;
+		padding:0;
+		h2{
+			font-family: RobotoLight;
+			text-transform: uppercase;
+			color: white;
+			padding: 18% 30px 0 30px;
+			margin: 0 30px;
+			transition: .5s;
+			text-shadow: 1px 1px 1px black;
+		}
+		p{
+			text-transform: uppercase;
+			font-size: 14px;
+			padding:20px 100px;
+		}
+	}
+	
+	.overlay{
+		background: rgba(0,0,0,.65);
+		height: 300px;
+		width: 100%;
+		margin: 0;
+		padding: 0;
+		transition: .5s;
+		&:hover{
+			background: rgba(0,0,0,0);
+		}
+	}
+
+	.factory{
+		background-image: url(../img/sto.jpg);
+		background-size: cover;
+	}
+
+	.slogan,.our-objects,.about{
+		background-image: url(../img/back.jpg);
+		background-size: cover;
+		color: white;
+		h2{
+			text-shadow: none;
+		}
+	}
+
+	.houses{
+		background-image: url(../img/house.jpg);
+		background-size: cover;
+	}
+
+	.design{
+		background-image: url(../img/str5.jpg);
+		background-size: cover;
+	}
+}
+
+footer{
+	background: black;
+	height:70px;
+	.footer-left-part{
+		img{
+			width: 30px;
+			height: 30px;
+
+		}
+
+		h3{
+			display: inline-block;
+			margin: 0;
+			line-height: 70px;
+		}
+	}
+}
+
+@media screen and (max-width: 768px) {
+
+}
+
+
+
+
+
+
+
+
+
+
+@import "media.scss";
+
+
+
+
+
+
+
+
+
+
+
+

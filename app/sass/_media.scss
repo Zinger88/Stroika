@@ -1,0 +1,89 @@
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px){
+
+	header{
+		.container{
+			.left-part{
+				text-align: center;
+				h1{
+					font-size: 14px;
+					margin: 0;
+				}
+			}
+		}
+	} 
+	
+	header .container .right-part{
+		text-align: center;
+	}
+	
+	header nav ul li{
+		display: block;
+	}
+			
+	
+}
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px){
+
+	.top-slider .slider .slider-item1 h2{
+		margin-top: 60%;
+	}
+	
+	.top-slider .slider .slider-item2 h2{
+		margin-top: 60%;
+	}
+
+	.top-slider .slider .slider-item3 h2{
+		margin-top: 60%;
+	}
+}
+	/**/
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px){
+
+}
+	/**/
+
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px){
+	
+}
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px){
+	
+}
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px){
+	
+}
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px){
+	
+}
+	/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px){
+	
+}
+	/**/
+

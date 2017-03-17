@@ -1,0 +1,279 @@
+.main-section{
+	.content{
+		margin-top: 10px;
+		.products{
+			.product{
+				background: #fff none repeat scroll 0 0;
+				border: 1px solid #c0c0c0;
+				height: 390px;
+				overflow: hidden;
+				position: relative;
+				text-align: center;
+				transition: all .5s ease 0s;
+				margin-bottom: 20px;
+				&:hover{
+					box-shadow: 0 0 16px rgba(0,0,0,0.5);
+				}
+				.product-img{
+					img{
+						width: 100%;
+						max-width: 200px;
+						max-height: 200px;
+						
+					}
+				}
+				
+				.product-bottom-part{
+					background: rgba(17, 17, 17, 0.7);
+					padding: 10px;
+					height: 50%;
+					color: white;
+					text-shadow: 1px 1px 2px black;
+					
+					
+					.product-title {
+						height: 50px;
+						overflow: hidden;
+						a {
+						color: white;
+						text-transform: uppercase;
+						font-weight: bold;
+						font-size: 16px;
+						}
+					}
+
+					.product-desc{
+						text-transform: uppercase;
+						color:#c0c0c0;
+						font-size: 12px;
+					}
+
+					.product-price{
+						color: yellow;
+						font-size: 25px;
+						font-weight: 500;
+						margin: 0;
+					}
+					
+					.old-price{
+						text-decoration: line-through;
+						color: darkgrey;
+					}
+				
+				}
+			}
+			
+		}
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.main-section .content .products .product .product-bottom-part .product-price{
+		font-size: 20px;
+	}
+	.main-section .content .products .product .product-bottom-part .product-title {
+		margin: 0;
+	}
+	
+	p {
+		margin: 0;
+		font-size: 10px;
+	}
+}
+@media screen and (max-width: 426px) {
+	
+}
+//==============================СТИЛИ КАРТОЧКИ ПРОДУКТА
+.product-main{
+ 
+	.pr-img{
+		margin-top: 20px;
+		width: 100%;
+		height: auto;
+		.slider-pr{
+			.sl-pr{
+				max-height: 300px;
+				img{
+					margin: 0 auto;
+					max-width: 300px;
+					max-height: 300px;
+				}
+			}
+		}
+		.slider-nav{
+			width: 50%;
+			margin:20px auto;
+			.sl-pr{
+				&:focus{
+					border:none;
+				}
+				img{
+					max-width:60px;
+					max-height: 60px;
+				}
+			}
+		}
+	}
+	
+	.pr-desc{
+		text-align: center;
+		margin: 20px 0;
+		padding:0 60px;
+		
+	}
+	
+	.parametrs{
+		
+		h3{
+			font-weight: bold;
+		}
+		h4{
+			padding: 20px 0;
+			font-size: 27px;
+			font-weight: bold;
+			color:#e65540;
+			text-shadow: 0px 1px 1px black;
+			span{
+				font-size: 18px;
+			}
+		}
+		
+		.old-price{
+			text-decoration: line-through;
+			color: darkgrey;
+		}
+		
+		p{
+				text-transform: uppercase;
+				letter-spacing: .1em;
+				color: dimgrey;
+		}
+		.tech{
+			padding: 15px;
+			margin: 20px 0;
+			width: 100%;
+			height: auto;	
+			background: #e7e7e7;
+			letter-spacing: .1em;
+			font-size: 12px;
+			
+		}
+		
+	}
+}
+
+//=================   СТИЛИ ДЛЯ КОНТАКТОВ =====================
+
+.contacts{
+	margin:20px 0;
+	.contacts-block{
+		margin-top: 20px;
+		letter-spacing: .1em;
+	}
+	
+	.contacts-form{
+		text-align: center;
+		fieldset{
+			input{
+				height: 40px;
+				width: 75%;
+				margin: 10px 0;
+				
+			}
+			textarea{
+				width: 75%;
+				display: block;
+				margin: 20px auto;
+			}
+			
+		}
+		
+	}
+}
+
+
+//================CТИЛИ ДЛЯ СТРАНИЦЫ БЛОГА ==========================
+
+.blog-page{
+	h1{
+		text-transform: uppercase;
+		font-size: 26px;
+	}
+	h2{
+		font-size: 24px;
+		
+	}
+	hr{
+		margin: 10px 0 3px 0;
+	}
+	.blog-item{
+		margin-bottom: 20px;
+		padding: 0 10px;
+		border-bottom: 1px dashed #e7e7e7;
+		
+		a{
+			text-decoration: none;
+			h3{
+				font-size: 20px;
+				color: #e65540;
+			}
+		}
+		
+		span{
+			color: #989898;
+			font-size: 12px;
+		}
+		.autor-blog{
+			padding: 0 10px;
+			color: black;
+		}
+		
+		p{
+			margin: 15px 0;
+		}
+		
+		.read-more{
+			height: 35px;
+			border: 1px solid #e7e7e7;
+			background: #e7e7e7;
+		}
+		
+	}
+	
+	h3{
+		font-size: 18px; 
+	}
+	
+	.last-posts{
+		padding: 10px;
+		border-bottom: 1px dashed #e7e7e7;
+		a{
+			text-decoration: none;
+			color:#e65540;
+		}
+	}
+	
+	.last-comments{
+		padding: 10px;
+		border-bottom: 1px dashed #e7e7e7;
+		a{
+			text-decoration: none;
+			color:#e65540;
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
